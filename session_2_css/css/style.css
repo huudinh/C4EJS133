@@ -1,0 +1,69 @@
+* {
+    color:brown;
+}
+
+body {
+    font-size:20px;
+}
+
+b{
+    color:red;
+}
+
+li{
+    font-style: italic;
+}
+
+.title2{
+    font-weight: bold;
+    color:red;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.title2.title3{
+    background-color: rgb(123, 157, 157);
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+    width:200px;
+}
+
+#title{
+    font-weight: bold;
+    color:red;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.item1 .item2{
+    background-color: rgb(140, 212, 125);
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+    width:200px;
+}
+
+.list > .item2 {
+    color:green;
+}
+.item-end {
+    cursor: pointer;
+}
+.item-end ul{
+    display: none;
+}
+
+.item-end:hover ul{
+    display:block;
+}
+a:hover{
+    color:red;
+}
+a span{
+    display: none;
+    font-size:11px;
+}
+a:hover span{
+    display: block;
+}
