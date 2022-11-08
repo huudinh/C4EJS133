@@ -1,0 +1,282 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+}
+html {scroll-behavior:smooth;}
+h2[id]{scroll-margin-top:170px;}
+h3[id]{scroll-margin-top:170px;}
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Framework */
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.active{
+    font-weight: 700;
+    color: red;
+}
+.bgDanger {
+    background-color: #dc3545;
+}
+
+.bgWarning {
+    background-color: #ffc107;
+}
+
+.bgSuccess {
+    background-color: #198754;
+}
+
+/* Layout */
+.listMenu{
+    margin: 20px;
+}
+header, footer{
+    background-color: #fff;
+    padding:15px 45px;
+    text-align: center;
+}
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top:0;
+}
+
+main{
+    border-bottom: 0;
+    display: flex;
+    margin-top: 135px;
+}
+
+.main__item{
+    background-color:#eee;
+    padding:10px 20px;
+    margin:10px;
+}
+
+.main__item--content{
+    flex:1;
+    width: 80%;
+}
+
+.main__item--sidebar{
+    width:310px;
+}
+.sidebar{
+    position: relative;
+    height: 99%;
+}
+.sidebar a{
+    color:#333;
+}
+.sidebar a:hover{
+    color:#dc3545
+}
+.sidebar__banner{
+    position: sticky;
+    top:190px;
+}
+.sidebar__banner img{
+    width:100%
+}
+
+/* Inline & block */
+.navMain ul{
+    list-style: none;
+}
+.navMain li{
+    display: inline;
+    padding: 5px;
+}
+.navMain a{
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+    border-radius: 4px;
+}
+.navMain a:hover{
+    background-color: #dc3545;
+    color:white;
+}
+
+/* Block */
+.blockBox__item {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+}
+
+/* Inline */
+.inlineBox__item {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    display: inline;
+}
+
+/* Inline Block */
+.inlineBlockBox__item {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+}
+
+/* Flex*/
+.flexBox{
+    display: flex;
+}
+.flexBox__item {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Inline Flex*/
+
+.inlineFlexBox{
+    display: inline-flex;
+}
+.inlineFlexBox__item {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* wrap */
+.flexBox--wrap{
+    flex-wrap: wrap;
+}
+.flexBox__item--wrap{
+    width:200px;
+}
+
+/* gap */
+.flexBox--gap{
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+/* Align Item */
+.bigBox{
+    display: flex;
+    background: #ddd;
+    width: 100%;
+    height: 300px;
+}
+
+.bigBox__item {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.bigBox__item--w20{
+    width:20%
+}
+.bigBox__item--w33{
+    width:33.3333%;
+}
+.bigBox__item--w220px{
+    width:220px;
+}
+
+.bigBox__item--w100{
+    width:100%
+}
+.bigBox--alignItem {
+    align-items: flex-start;
+}
+
+/* Flex Direction */
+.bigBox--flexDirection{
+    flex-direction: row-reverse;
+}
+
+/* Justify Content */
+.bigBox--justifyContent{
+    justify-content: center;
+}
+
+/* Align Item */
+.bigBox__item--alignSelf{
+    align-self: flex-end;
+}
+
+/* Align Content */
+.bigBox--alignContent{
+    align-content: space-between;
+}
+
+/* Order */
+.bigBox__item--order1{
+    order:1;
+}
+.bigBox__item--order2{
+    order:2;
+}
+.bigBox__item--order3{
+    order:3;
+}
+
+/* Flex Grow */
+.bigBox--flexGrow1{
+    flex-grow: 1;
+}
+.bigBox__item--flexGrow1{
+    flex-grow: 1;
+}
+.bigBox__item--flexGrow3{
+    flex-grow: 3;
+}
+
+/* Flex Basis */
+.bigBox__item--flexBasis{
+    flex-basis: 100%;
+}
+
+/* Flex Shrink */
+.bigBox__item--flexShrink3{
+    flex-shrink: 3;
+}
+
+/* Flex */
+.bigBox__item--flex{
+    flex: 1;
+}
+
+/* Grid */
+.girdBox {
+    display: grid;
+    padding:10px;
+    background-color: #2196F3;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+.girdBox__item {            
+    padding:15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    font-size: 24px;
+}
+.girdBox--gap{
+    gap:10px;
+}
+.gridBox__item--column{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.gridBox__item--row{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

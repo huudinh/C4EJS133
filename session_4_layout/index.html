@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Layout Website</h1>
+            <nav class="navMain">
+                <ul>
+                    <li><a href="#css-display">CSS Display</a></li>
+                    <li><a href="#">CSS Position</a></li>
+                    <li><a href="#flexbox">CSS Flexbox</a></li>
+                    <li><a href="#gird">CSS Gird</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main class="main">
+            <div class="main__item main__item--content">
+                <h2 id="css-display">I. CSS Display</h2>
+                <section>
+                    <h3 id="block">1. Block</h3>
+                    <div class="blockBox">
+                        <div class="blockBox__item bgSuccess">1</div>
+                        <div class="blockBox__item bgWarning">2</div>
+                        <div class="blockBox__item bgDanger">3</div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="inline">2. Inline</h3>
+                    <div class="inlineBox">
+                        <div class="inlineBox__item bgSuccess">1</div>
+                        <div class="inlineBox__item bgWarning">2</div>
+                        <div class="inlineBox__item bgDanger">3</div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="inline-block">3. Inline-Block</h3>
+                    <div class="inlineBlockBox">
+                        <div class="inlineBlockBox__item bgSuccess">1</div>
+                        <div class="inlineBlockBox__item bgWarning">2</div>
+                        <div class="inlineBlockBox__item bgDanger">3</div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="flex">4. Flex</h3>
+                    <div class="flexBox">
+                        <div class="flexBox__item bgSuccess">1</div>
+                        <div class="flexBox__item bgWarning">2</div>
+                        <div class="flexBox__item bgDanger">3</div>
+                    </div>
+                    <div class="flexBox">
+                        <div class="flexBox__item bgSuccess">1</div>
+                        <div class="flexBox__item bgWarning">2</div>
+                        <div class="flexBox__item bgDanger">3</div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="inline-flex">5. Inline Flex</h3>
+                    <div class="inlineFlexBox">
+                        <div class="inlineFlexBox__item bgSuccess">1</div>
+                        <div class="inlineFlexBox__item bgWarning">2</div>
+                        <div class="inlineFlexBox__item bgDanger">3</div>
+                    </div>
+                    <div class="inlineFlexBox">
+                        <div class="inlineFlexBox__item bgSuccess">1</div>
+                        <div class="inlineFlexBox__item bgWarning">2</div>
+                        <div class="inlineFlexBox__item bgDanger">3</div>
+                    </div>
+                </section>
+                <h2 id="flexbox">II. CSS Flex Box</h2>
+                <section>
+                    <h3 id="wrap">1. Flex Wrap</h3>
+                    <div class="flexBox flexBox--wrap">
+                        <div class="flexBox__item bgSuccess flexBox__item--wrap">1</div>
+                        <div class="flexBox__item bgWarning flexBox__item--wrap">2</div>
+                        <div class="flexBox__item bgDanger flexBox__item--wrap">3</div>
+                        <div class="flexBox__item bgSuccess flexBox__item--wrap">1</div>
+                        <div class="flexBox__item bgWarning flexBox__item--wrap">2</div>
+                        <div class="flexBox__item bgDanger flexBox__item--wrap">3</div>
+                        <div class="flexBox__item bgSuccess flexBox__item--wrap">1</div>
+                        <div class="flexBox__item bgWarning flexBox__item--wrap">2</div>
+                        <div class="flexBox__item bgDanger flexBox__item--wrap">3</div>
+                    </div>
+                    <h3 id="gap">2. Grap</h3>
+                    <div class="flexBox flexBox--wrap flexBox--gap">
+                        <div class="flexBox__item bgSuccess flexBox__item--wrap">1</div>
+                        <div class="flexBox__item bgWarning flexBox__item--wrap">2</div>
+                        <div class="flexBox__item bgDanger flexBox__item--wrap">3</div>
+                        <div class="flexBox__item bgSuccess flexBox__item--wrap">1</div>
+                        <div class="flexBox__item bgWarning flexBox__item--wrap">2</div>
+                        <div class="flexBox__item bgDanger flexBox__item--wrap">3</div>
+                        <div class="flexBox__item bgSuccess flexBox__item--wrap">1</div>
+                        <div class="flexBox__item bgWarning flexBox__item--wrap">2</div>
+                        <div class="flexBox__item bgDanger flexBox__item--wrap">3</div>
+                    </div>
+                    <h3 id="align-item">3. Align-Item</h3>
+                    <div class="bigBox bigBox--alignItem">
+                        <div class="bigBox__item bigBox__item--w20 bgSuccess">1</div>
+                        <div class="bigBox__item bigBox__item--w20 bgWarning">2</div>
+                        <div class="bigBox__item bigBox__item--w20 bgDanger">3</div>
+                    </div>
+                    <h3 id="flex-direction">4. Flex-direction</h3>
+                    <div class="bigBox  bigBox--alignItem bigBox--flexDirection">
+                        <div class="bigBox__item bigBox__item--w20 bgSuccess">1</div>
+                        <div class="bigBox__item bigBox__item--w20 bgWarning">2</div>
+                        <div class="bigBox__item bigBox__item--w20 bgDanger">3</div>
+                    </div>
+                    <h3 id="justify-content">5. Justify Content</h3>
+                    <div class="bigBox  bigBox--alignItem bigBox--justifyContent">
+                        <div class="bigBox__item bigBox__item--w20 bgSuccess">1</div>
+                        <div class="bigBox__item bigBox__item--w20 bgWarning">2</div>
+                        <div class="bigBox__item bigBox__item--w20 bgDanger">3</div>
+                    </div>
+                    <h3 id="align-seft-align-item">6. Align-self & Align-item</h3>
+                    <div class="bigBox  bigBox--alignItem">
+                        <div class="bigBox__item bigBox__item--w20 bgSuccess">1</div>
+                        <div class="bigBox__item bigBox__item--w20 bgWarning bigBox__item--alignSelf">2</div>
+                        <div class="bigBox__item bigBox__item--w20 bgDanger">3</div>
+                    </div>
+                    <h3 id="align-content-wrap">7. Align Content & Wrap</h3>
+                    <div class="bigBox bigBox--alignContent flexBox--wrap">
+                        <div class="bigBox__item bigBox__item--w100 bgSuccess">1</div>
+                        <div class="bigBox__item bigBox__item--w100 bgWarning">2</div>
+                        <div class="bigBox__item bigBox__item--w100 bgDanger">3</div>
+                    </div>
+                    <h3 id="order">8. Order</h3>
+                    <div class="bigBox bigBox--alignItem ">
+                        <div class="bigBox__item bigBox__item--w100 bgSuccess bigBox__item--order3">1</div>
+                        <div class="bigBox__item bigBox__item--w100 bgWarning bigBox__item--order2">2</div>
+                        <div class="bigBox__item bigBox__item--w100 bgDanger bigBox__item--order1">3</div>
+                    </div>
+                    <h3 id="flex-grow">9. Flex Grow</h3>
+                    <div class="bigBox bigBox--alignItem">
+                        <div class="bigBox__item bgSuccess bigBox__item--flexGrow1">1</div>
+                        <div class="bigBox__item bgWarning bigBox__item--flexGrow3">2</div>
+                        <div class="bigBox__item bgDanger bigBox__item--flexGrow1">3</div>
+                    </div>
+                    <h3 id="flex-shrink">9. Flex Shrink</h3>
+                    <div class="bigBox ">
+                        <div class="bigBox__item bgSuccess bigBox__item--w220px">1</div>
+                        <div class="bigBox__item bgWarning bigBox__item--flexShrink3 bigBox__item--w220px">2</div>
+                        <div class="bigBox__item bgDanger bigBox__item--w220px ">3</div>
+                        
+                    </div>
+                    <h3 id="flex-basis">10. Flex Basis</h3>
+                    <div class="bigBox bigBox--alignItem">
+                        <div class="bigBox__item bgSuccess  bigBox__item--w33">1</div>
+                        <div class="bigBox__item bgWarning bigBox__item--w33 bigBox__item--flexBasis">2</div>
+                        <div class="bigBox__item bgDanger bigBox__item--w33 ">3</div>
+                    </div>
+                    <h3 id="flex-grow-flex-shrink-flex-basic">11. flex-grow và flex-shrink và Flex-basic</h3>
+                    <div class="bigBox bigBox--alignItem">
+                        <div class="bigBox__item bgSuccess  bigBox__item--w220px">1</div>
+                        <div class="bigBox__item bgWarning bigBox__item--w220px ">2</div>
+                        <div class="bigBox__item bgDanger  bigBox__item--flex">3</div>
+                    </div>
+                </section>
+                <h2 id="gird">III. CSS Gird</h2>
+                <section>
+                    <h3 id="grid-template">1. Grid Template</h3>
+                    <div class="girdBox ">
+                        <div class="girdBox__item bgSuccess ">1</div>
+                        <div class="girdBox__item bgWarning ">2</div>
+                        <div class="girdBox__item bgDanger  ">3</div>
+                        <div class="girdBox__item bgSuccess ">4</div>
+                        <div class="girdBox__item bgWarning ">5</div>
+                        <div class="girdBox__item bgDanger  ">6</div>
+                        <div class="girdBox__item bgSuccess ">7</div>
+                        <div class="girdBox__item bgWarning ">8</div>
+                        <div class="girdBox__item bgDanger  ">9</div>
+                    </div>
+                    <h3 id="grid-gap">2. Grid Gap</h3>
+                    <div class="girdBox girdBox--gap">
+                        <div class="girdBox__item bgSuccess ">1</div>
+                        <div class="girdBox__item bgWarning ">2</div>
+                        <div class="girdBox__item bgDanger  ">3</div>
+                        <div class="girdBox__item bgSuccess ">4</div>
+                        <div class="girdBox__item bgWarning ">5</div>
+                        <div class="girdBox__item bgDanger  ">6</div>
+                        <div class="girdBox__item bgSuccess ">7</div>
+                        <div class="girdBox__item bgWarning ">8</div>
+                        <div class="girdBox__item bgDanger  ">9</div>
+                    </div>
+                    <h3 id="grid-lines-column">3. Grid Lines column</h3>
+                    <div class="girdBox girdBox--gap">
+                        <div class="girdBox__item bgSuccess gridBox__item--column">1</div>
+                        <div class="girdBox__item bgWarning ">2</div>
+                        <div class="girdBox__item bgDanger  ">3</div>
+                        <div class="girdBox__item bgSuccess ">4</div>
+                        <div class="girdBox__item bgWarning ">5</div>
+                        <div class="girdBox__item bgDanger  ">6</div>
+                        <div class="girdBox__item bgSuccess ">7</div>
+                        <div class="girdBox__item bgWarning ">8</div>
+                        <div class="girdBox__item bgDanger  ">9</div>
+                    </div>
+                    <h3 id="grid-lines-row">4. Grid Lines row</h3>
+                    <div class="girdBox girdBox--gap">
+                        <div class="girdBox__item bgSuccess gridBox__item--row">1</div>
+                        <div class="girdBox__item bgWarning ">2</div>
+                        <div class="girdBox__item bgDanger  ">3</div>
+                        <div class="girdBox__item bgSuccess ">4</div>
+                        <div class="girdBox__item bgWarning ">5</div>
+                        <div class="girdBox__item bgDanger  ">6</div>
+                        <div class="girdBox__item bgSuccess ">7</div>
+                        <div class="girdBox__item bgWarning ">8</div>
+                        <div class="girdBox__item bgDanger  ">9</div>
+                    </div>
+                </section>
+            </div>
+            <aside class="main__item main__item--sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__banner">
+                        <h2>Layout</h2>
+                        <ol class="list" type="I">
+                            <li><a class="active" href="#css-display">CSS Display</a>
+                                <ol>
+                                    <li><a href="#block">Block</a></li>
+                                    <li><a href="#inline">Inline</a></li>
+                                    <li><a href="#inline-block">Inline-Block</a></li>
+                                    <li><a href="#flex">Flex</a></li>
+                                    <li><a href="#inline-flex">Inline-Flex</a></li>
+                                </ol>
+                            </li>
+                            <li><a class="active" href="#flexbox">CSS Flexbox</a>
+                                <ol>
+                                    <li><a href="#wrap">Wrap</a></li>
+                                    <li><a href="#gap">Gap</a></li>
+                                    <li><a href="#align-item">Align-Item</a></li>
+                                    <li><a href="#flex-direction">Flex-direction</a></li>
+                                    <li><a href="#justify-content">Justify-content</a></li>
+                                    <li><a href="#align-seft-align-item">Align-seft & Align-item</a></li>
+                                    <li><a href="#align-content-wrap">Align Content & Wrap</a></li>
+                                    <li><a href="#order">Order</a></li>
+                                    <li><a href="#flex-grow">Flex Grow</a></li>
+                                    <li><a href="#flex-shrink">Flex Shrink</a></li>
+                                    <li><a href="#flex-basis">Flex Basis</a></li>
+                                    <li><a href="#flex-grow-flex-shrink-flex-basic">flex-grow và flex-shrink và Flex-basic</a></li>
+                                </ol>
+                            </li>
+                            <li><a class="active" href="#gird">Gird</a><b></b>
+                                <ol>
+                                    <li><a href="#grid-template">Grid Template</a></li>
+                                    <li><a href="#grid-gap">Grid Gap</a></li>
+                                    <li><a href="#grid-lines-column">Grid Lines Column</a></li>
+                                    <li><a href="#grid-lines-row">Grid Lines Row</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <img src="https://icdn.dantri.com.vn//2022/10/26/2410phau-thuat-chinh-hinh-hong-ngoc-mang-den-ve-dep-hoan-my-cho-phai-dep-2-1-crop-1666797855930.jpeg" />
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <footer>
+        (c) copyright Mindx 2022
+    </footer>
+</body>
+
+</html>
