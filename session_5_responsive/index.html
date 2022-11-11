@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS5 - Responsive</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="slogan">Responsive Website</h1>
+            <nav class="navMain">
+                <span><i style="font-size:24px" class="fa">&#xf0c9;</i></span>
+                <ul>
+                    <li><a href="#responsive-la-gi">Responsive là gì</a></li>
+                    <li><a href="#viewport">Viewport</a></li>
+                    <li><a href="#responsive-bases">Responsive Bases</a></li>
+                    <li><a href="#responsive-advance">Responsive Advance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main class="main">
+            <div class="main__item main__item--content">
+                <section>
+                    <h2 id="responsive-la-gi">I. Responsive là gì</h2>
+                    <p>Thiết kế ứng dụng web dạng responsive là một cách thiết kế ứng dụng web sao cho ứng dụng hiển thị tốt và có thể sử dụng được ở nhiều kích thước màn hình của các loại thiết bị khác nhau.</p>
+                    <img src="assets/images/responsive.png" style="width:100%" />
+                    <p><i>Hiểu một cách đơn giản, ứng dụng web của chúng ta cần tự động thay đổi giao diện, bố cục để có thể vừa với nhiều loại kích thước màn hình khác nhau.</i></p>
+                    <article>
+                        <h3 id="tai-sao-can-responsive">1. Tai sao can Responsive</h3>
+                        <p>Với sự lên ngôi của các thiết bị di động như hiện nay, đa phần lưu lượng truy cập internet đều đến từ các trình duyệt di động. Vì vậy, việc các websites cần phải thân thiện với các thiết bị nhỏ hơn này là điều cần thiết. Nếu chúng ta bê nguyên giao diện trên máy tính để bàn xuống dưới một màn hình nhỏ, người dùng sẽ liên tục cần phóng to và cuộn để có thể xem được nội dung. Từ đó làm giảm chất lượng trải nghiệm của người dùng.</p>
+                    </article>
+                    <article>
+                        <h3 id="responsive-web-design">2. Responsive web design</h3>
+                        <p>Responsive sẽ giúp chúng ta tiết kiệm chi phí phát triển ứng dụng. <br> Chúng ta chỉ cần một phiên bản web cho tất cả các cỡ màn hình. Tuy nhiên, trên giao diện màn hình nhỏ, ứng dụng web vẫn cần phải download toàn bộ resource tương tự như máy tính. Vì vậy ứng dụng có thể sẽ chậm hơn trên các thiết bị yếu.</p>
+                    </article>
+                    <article>
+                        <h3 id="adaptive-web-design">3. Adaptive web design</h3>
+                        <p>Adaptive sẽ giúp người dùng có một trải nghiệm nhanh nhất có thể với các thiết bị có cấu hình thấp hơn, do lúc này có thể loại bỏ nhiều thành phần không cần thiết. Tuy nhiên, chúng ta cũng sẽ cần phải tốn thời gian và công sức để xây dựng song song nhiều ứng dụng cùng một thời điểm. Chi phí phát triển vì thế mà cũng tăng lên.</p>
+                    </article>
+                    <article>
+                        <h3 id="mobile-first">4. Mobile first</h3>
+                        <p>Mobile first là triết lý thiết kế ứng dụng để nó hiển thị tốt trên các thiết bị nhỏ trước khi thiết kế cho các màn hình lớn hơn. Việc này sẽ giúp trải nghiệm được tối ưu hoá trên màn hình nhỏ</p>
+                    </article>
+                    <article>
+                        <h3 id="desktop-first">5. Desktop First</h3>
+                        <p>Desktop First: trải nghiệm được tối ưu cho màn hình lớn trước. Việc đỉ từ nhỏ tới lớn sẽ dễ dàng hơn là đi từ lớn về nhỏ. Vì chúng ta có thể quyết định thêm các thành phần gì, thay vì phải bớt đi thành phần nào nếu đi ngược lại.</p>
+                    </article>
+                </section>
+                <section>
+                    <h2 id="viewport">II. Viewport</h2>
+                    <p>Khai báo một thẻ meta có thuộc tính name="viewport" để hướng dẫn trình duyệt điều chỉnh chiều rộng của ứng dụng web sẽ bằng với chiều. rộng của màn hình trên thiết bị</p>
+                    <p>Chúng ta khai báo giá trị initial-scale=1, trình duyệt sẽ hiển thực ở mức độ zoom ban đầu</p>
+                    <img src="assets/images/viewport.png" style="width:100%" />
+                </section>
+                <section>
+                    <h2 id="responsive-bases">III. Responsive Bases</h2>
+                    <article>
+                        <h3 id="responsive-images">1. Responsive Images</h3>
+                        <ul>
+                            <li>
+                                <h4>width:100%</h4>
+                                <img src="https://www.w3schools.com/w3images/streetart.jpg" style="width:100%;">
+                            </li>
+                            <li>
+                                <h4>Max-width:100%</h4>
+                                <img src="https://www.w3schools.com/html/img_girl.jpg" style="max-width:100%;">
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3 id="responsive-picture">2. Responsive Picture</h3>
+                        <picture>
+                            <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width: 600px)">
+                            <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 800px)">
+                            <source srcset="https://www.w3schools.com/html/flowers.jpg">
+                            <img src="https://www.w3schools.com/html/img_flowers.jpg" alt="Flowers" style="width:100%;">
+                          </picture>
+                    </article>
+                    <article>
+                        <h3 id="responsive-text">3. Responsive Text</h3>
+                        <p style="font-size:1.9vw;">Text size: 1.9vw</p>
+                        <p style="font-size:1.4vw;">Text size: 1.4vw</p>
+                        <p style="font-size:1.2vw;">Text size: 1.2vw</p>
+                        <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+                    </article>
+                </section>
+                <section>
+                    <h2 id="responsive-advance">IV. Responsive Advance</h2>
+                    <article>
+                        <h3 id="media-queriess">1. Media Queriess</h3>
+                        <ul>
+                            <li> all: tất cả các thiết bị media</li>
+                            <li> screen: các thiết bị media hiển thị trên màn hình: điện thoại, máy tính bảng, máy tính bàn</li>
+                            <li> print: hiển thị trên các văn bản in.</li>
+                            <li> speech: các thiết bị có chức năng “đọc” nội dung trên màn hình</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3 id="breakpoint">2. Breakpoint</h3>
+                        <ul>
+                            <li> 576px: Cỡ màn hình điện thoại</li>
+                            <li> 576px → 768px: Cỡ màn hình tablet</li>
+                            <li> 768px → 1180px: Cỡ màn hình tablet ngang</li>
+                            <li> 1200px: Màn hình máy tính lớn</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3 id="responsive-flexbox">3. Responsive Flexbox</h3>
+                        <p style="text-align:center"><img src="assets/images/responsive-column.jpg" style="width:100%" /></p>
+                        <ul class="row">
+                            <li class="col-2"> Laptop and Desktops:
+                                <div class="box row box--reponsive">
+                                    <div class="box__item box__item--responsive col-3 bgDanger">1</div>
+                                    <div class="box__item box__item--responsive col-3 bgWarning">2</div>
+                                    <div class="box__item box__item--responsive col-3 bgSuccess">3</div>
+                                </div>
+                            </li>
+                            <li class="col-2"> Mobile and Tablets:
+                                <div class="box box--mobile row">
+                                    <div class="box__item col bgDanger">1</div>
+                                    <div class="box__item col bgWarning">2</div>
+                                    <div class="box__item col bgSuccess">3</div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                </section>
+                
+            </div>
+            <aside class="main__item main__item--sidebar">
+                <div class="sidebar">
+                    <div class="sidebar__banner">
+                        <h2>Responsive</h2>
+                        <ol class="list" type="I">
+                            <li><a class="active" href="#responsive-la-gi">Responsive là gì</a>
+                                <ol>
+                                    <li><a href="#tai-sao-can-responsive">Tai sao cần Responsive</a></li>
+                                    <li><a href="#responsive-web-design">Responsive web design</a></li>
+                                    <li><a href="#adaptive-web-design">Adaptive web design</a></li>
+                                    <li><a href="#mobile-first">Mobile first</a></li>
+                                    <li><a href="#desktop-first">Desktop first</a></li>
+                                </ol>
+                            </li>
+                            <li><a class="active" href="#viewport">Viewport</a>
+                            </li>
+                            <li><a class="active" href="#responsive-bases">Responsive Bases</a><b></b>
+                                <ol>
+                                    <li><a href="#responsive-images">images</a></li>
+                                    <li><a href="#responsive-picture">picture</a></li>
+                                    <li><a href="#responsive-text">text</a></li>
+                                </ol>
+                            </li>
+                            <li><a class="active" href="#responsive-advance">Responsive Advance</a><b></b>
+                                <ol>
+                                    <li><a href="#media-queriess">Media Queries</a>
+                                        
+                                    </li>
+                                    <li><a href="#breakpoint">Breakpoint</a>
+                                        
+                                    </li>
+                                    <li><a href="#responsive-flexbox"> Responsive Flexbox</a>
+                                        
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <a href="https://www.w3schools.com/css/css_rwd_templates.asp">
+                            <img src="assets/images/responsive.gif" />
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <footer>
+        (c) copyright Mindx 2022
+    </footer>
+</body>
+
+</html>
