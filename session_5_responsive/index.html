@@ -37,7 +37,7 @@
                     <img src="assets/images/responsive.png" style="width:100%" />
                     <p><i>Hiểu một cách đơn giản, ứng dụng web của chúng ta cần tự động thay đổi giao diện, bố cục để có thể vừa với nhiều loại kích thước màn hình khác nhau.</i></p>
                     <article>
-                        <h3 id="tai-sao-can-responsive">1. Tai sao can Responsive</h3>
+                        <h3 id="tai-sao-can-responsive">1. Tai sao cần Responsive</h3>
                         <p>Với sự lên ngôi của các thiết bị di động như hiện nay, đa phần lưu lượng truy cập internet đều đến từ các trình duyệt di động. Vì vậy, việc các websites cần phải thân thiện với các thiết bị nhỏ hơn này là điều cần thiết. Nếu chúng ta bê nguyên giao diện trên máy tính để bàn xuống dưới một màn hình nhỏ, người dùng sẽ liên tục cần phóng to và cuộn để có thể xem được nội dung. Từ đó làm giảm chất lượng trải nghiệm của người dùng.</p>
                     </article>
                     <article>
@@ -85,7 +85,7 @@
                             <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 800px)">
                             <source srcset="https://www.w3schools.com/html/flowers.jpg">
                             <img src="https://www.w3schools.com/html/img_flowers.jpg" alt="Flowers" style="width:100%;">
-                          </picture>
+                        </picture>
                     </article>
                     <article>
                         <h3 id="responsive-text">3. Responsive Text</h3>
@@ -187,6 +187,27 @@
     <footer>
         (c) copyright Mindx 2022
     </footer>
+    <script>
+        const menu = document.querySelector('.navMain span i');
+        const menuBox = document.querySelector('.navMain ul');
+    
+        menu.addEventListener('click', ()=>{
+            acitveMenu();
+        })
+        
+        function acitveMenu() {
+            menuBox.classList.toggle("navActive");
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target != menu) {
+                setTimeout(()=>{
+                    menuBox.classList.remove("navActive");
+                }, 500);
+            }
+        }
+    </script>
 </body>
 
 </html>
