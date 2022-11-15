@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!----------------------------------------
+        1. JS là gì ?
+        2. Viết JS ở đâu ?
+        3. Variable
+            - Lưu trữ thông tin / có thể bị thay đổi 
+            - Key (var, let, const)
+            - Output / Input
+            - Cách đặt tên  hoTen
+                + Có thể bao gồm cả chữ và số
+                + Không được bắt đầu bằng số
+                + Không được chứa những ký tự đặc biệt (khoảng trắng cũng tính là ký tự đặc biệt), ngoại trừ "_" và "$".
+                + Không được trùng với các từ khóa (keywords) của javascript.
+            - Phạm vi hoạt động (Block scoped)
+            - Tự khai báo (hoisting)
+
+        4. DataTypes
+            - Type
+                + Primitive (number, string, Boolean, BigInt, Symbol, Undefined, Null)
+                + None-Primitives (object [array, function, object])
+            - Number
+                + Number operator (Addition (+), Substraction (-), Multiplication (*), Division (/), Remainder (%), ++ và - -)
+                + Number method: (Math.sqrt, ...)
+            - String            
+                + Dấu nháy kép (Double quotes): "javascript"
+                + Dấu nháy đơn (Single quotes): 'javascript'
+                + Backticks: `javascript`
+                + String literal (`I have ${n} dogs`)                
+                + String method: (text.toLowerCase, ...)
+            - Conversion
+                + String to Number: let n = Number('45');
+                + Number to String: let s = String(198);
+
+            ------------------------------------------------>
+</head>
+
+<body>
+    <script>
+        console.log(5 + 2);
+        console.log(5 - 2);
+        console.log(5 / 2);
+        console.log(5 * 2);
+
+        console.log(5 % 2);
+        console.log(5 ** 2);
+
+        let score = 99;
+        score++;
+        console.log(score);
+
+        let sum = 5 + 3 * 2 - 1 * (1 + 1);
+        console.log(sum);
+
+        let balance = 5000;
+        balance -= 400;
+        console.log(balance);
+
+        let donation = 100;
+        donation *= 2;
+        console.log(donation);
+
+        let sweets = 10;
+        sweets /= 10;
+        console.log(sweets);
+
+        let pizzaSlice = 10;
+        pizzaSlice %= 3;
+        console.log(pizzaSlice);
+
+        // Comparison
+        let x = 7;
+
+        // More than
+        console.log( x > 10, x > 6 );
+
+        console.log( x < 10, x >= 7 );
+
+        // less than
+        console.log( x < 10, x < 6);
+
+        console.log( x == 7, x == 6);
+
+        console.log( x != 7);
+
+        let y = '7';
+
+        console.log( x === 7, x === y);
+
+        console.log( x !== y );
+
+        const a = true; b = false;
+        const c = 4;
+
+        // logical AND
+        console.log(a && a);
+        console.log(a && b);
+
+        console.log((c > 2) && (c < 2));
+
+        // logical OR
+        console.log(a || b);
+        console.log(b || b);
+
+        // logical Not
+        console.log(!a);
+        console.log(!b);
+
+        {
+            let num = 5.66789;
+            let n = num.toFixed();
+
+            console.log(n);
+        }
+
+        {
+            let x = Math.floor(1.9);
+            console.log(x);
+        }
+
+        {
+            let x = Math.ceil(1.9);
+            console.log(x);
+        }
+        
+        {
+            let x = Math.abs(-7.25);
+            console.log(x);
+        }
+
+        {
+            let x = Math.sqrt(9);
+            console.log(x);
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!----------------------------------------
+        1. JS là gì ?
+        2. Viết JS ở đâu ?
+        3. Variable
+            - Lưu trữ thông tin / có thể bị thay đổi 
+            - Key (var, let, const)
+            - Output / Input
+            - Cách đặt tên  hoTen
+                + Có thể bao gồm cả chữ và số
+                + Không được bắt đầu bằng số
+                + Không được chứa những ký tự đặc biệt (khoảng trắng cũng tính là ký tự đặc biệt), ngoại trừ "_" và "$".
+                + Không được trùng với các từ khóa (keywords) của javascript.
+            - Phạm vi hoạt động (Block scoped)
+            - Tự khai báo (hoisting)
+
+        4. DataTypes
+            - Type
+                + Primitive (number, string, Boolean, BigInt, Symbol, Undefined, Null)
+                + None-Primitives (object [array, function, object])
+            - Number
+                + Number operator (Addition (+), Substraction (-), Multiplication (*), Division (/), Remainder (%), ++ và - -)
+                + Number method: (Math.sqrt, ...)
+            - String            
+                + Dấu nháy kép (Double quotes): "javascript"
+                + Dấu nháy đơn (Single quotes): 'javascript'
+                + Backticks: `javascript`
+                + String literal (`I have ${n} dogs`)                
+                + String method: (text.toLowerCase, ...)
+            - Conversion
+                + String to Number: let n = Number('45');
+                + Number to String: let s = String(198);
+
+            ------------------------------------------------>
+</head>
+<body>
+    <script>
+       const greeting = 'say Hi';
+
+        // greeting = 'hey hi';
+       
+       {
+            const greeting = 'say Hello instead';
+            console.log(greeting);
+       }
+
+       console.log(greeting);
+
+    //    name = 'Dinh';
+    //    console.log(name);
+     
+
+
+    </script>
+    
+</body>
+</html>
