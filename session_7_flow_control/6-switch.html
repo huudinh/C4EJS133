@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!----------------------------------------
+        1. Câu điều kiện IF - Else
+            - if / if - else / if - else if - else /
+            - Toán tử 3 ngôi
+        2. Vòng lặp Loop
+            - For
+            - while / do while
+            - switch
+        3. advance
+            - break
+            - continue
+            - infinity loop
+
+            ------------------------------------------------>
+</head>
+<body>
+    <script>
+       let day;
+        // console.log(new Date().getDay());
+       switch (new Date().getDay()){
+            case 0:
+                day = 'Sunday';
+                break;
+            case 1:
+                day = 'Monday';
+                break;
+            case 2:
+                day = 'Tuesday';
+                break;
+            case 3:
+                day = 'Wednesday';
+                break;
+            case 4:
+                day = 'Thursday';
+                break;
+            case 5:
+                day = 'Friday';
+                break;
+            case 6:
+                day = 'Saturday';
+                break;
+           default:
+            
+       }
+       console.log('Today is ' + day);
+
+       let text;
+       let favDrink = prompt("what's your favorite drink?", "Coca-Cola");
+
+       switch(favDrink) {
+            case 'Coca-Cola':
+                text = 'Excellent choice. Coca-Cola is good for your soul.';
+                break;
+            case 'Pepsi':
+                text = 'Pepsi is my favorite tool!';
+                break;
+            case 'Sprite':
+                text = 'Really? Are you sure the Sprite is your favorite?';
+                break;
+            default:
+                text = 'I have never heard of that one..'
+       }
+
+       alert(text);
+      
+
+    </script>
+</body>
+</html>
