@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!----------------------------------------
+        1. Function
+            - init, call
+            - type
+                + parameter / no parameter
+                + return
+            - scope (global / local )
+            - hoisting
+                - declaration function (hoisting)
+                - expressions / anonumous function (not hoisting)
+                - arrow function (not hoisting)
+            - Recursion (đệ quy)
+            - Callback
+
+        2. Array
+            - Init / Loop / Method
+            - Create (push, concat, ...)
+            - Read (for, for in, for of, forEach,...)
+            - Update (index, for, map, ...)
+            - Delete (slice(), filter())
+            - Method Other (find, findIndex, fill, some, every, Math.max, Math.min,... )
+            - Mảng 2 chiều: là kiểu mảng chứa các mảng khác bên trong nó.
+
+            ------------------------------------------------>
+</head>
+<body>
+    <script>
+        function countDown(fromNumber) {
+            console.log(fromNumber);
+
+            let nextNumber = fromNumber - 1;
+
+            if(nextNumber > 0) {
+                countDown(nextNumber);
+            }
+        }
+
+        countDown(5);
+
+
+    </script>
+</body>
+</html>
