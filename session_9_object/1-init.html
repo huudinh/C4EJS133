@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!----------------------------------------
+        1. Object
+            - Init / Create / Delete / Assign
+            - Read
+                + 1. Read Property
+                + 2. Object destructuring
+                + 3. Loop For In
+                + 4. Read Combo (Input, Loop, Conditional, Break)
+            - Update
+                + 1. Update Propery
+                + 2. Update Combo
+        2. Primitives & Reference Types
+        3. Object & Array & Function
+            - array in object (Object advance)
+            - object in object (Nested Object)
+            - function in object / this 
+            - object in array (Data list)
+        4. Object to Array
+
+    ------------------------------------------------>
+</head>
+<body>
+    <script>
+        {
+            const person = {};
+            // console.log(person);
+        }
+        {
+            const person = {
+                firstname: 'John',
+                lastname: 'Doe',
+                age: 50,
+                eyecolor: 'bule',
+            }
+            // console.log(person);
+
+            // Create
+            person.city = 'New York';
+            // console.log(person);
+
+            // Delete
+            delete person.age;
+            // console.log(person)
+
+            // Assign
+            const x = {
+                name: 'Alice'
+            }
+            const y = {
+                name: 'John',
+                age: 20
+            }
+
+            const z = Object.assign(x, y);
+            console.log(z);
+        }
+    </script>
+</body>
+</html>

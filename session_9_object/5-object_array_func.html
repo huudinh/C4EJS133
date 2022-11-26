@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!----------------------------------------
+        1. Object
+            - Init / Create / Delete / Assign
+            - Read
+                + 1. Read Property
+                + 2. Object destructuring
+                + 3. Loop For In
+                + 4. Read Combo (Input, Loop, Conditional, Break)
+            - Update
+                + 1. Update Propery
+                + 2. Update Combo
+        2. Primitives & Reference Types
+        3. Object & Array & Function
+            - array in object (Object advance)
+            - object in object (Nested Object)
+            - function in object / this 
+            - object in array (Data list)
+        4. Object to Array
+
+    ------------------------------------------------>
+</head>
+<body>
+    <script>
+        // 1. array in object
+        {
+            const person = {
+                firstname: 'John',
+                lastname: 'Doe',
+                age: 50,
+                eyecolor: 'bule',
+                interest: ['swim', 'running', 'eat iceream']
+            };
+
+            let interest = person.interest;
+            // console.log(interest);
+
+            for(let item of interest){
+                // console.log(item);
+            }
+        }
+
+        // 2. Object in object
+        {
+            const person = {
+                firstname: 'John',
+                lastname: 'Doe',
+                age: 50,
+                eyecolor: 'bule',
+                marks: {
+                    science: 70,
+                    math: 75
+                }
+            };
+            console.log(person.firstname, person.marks.math)
+        }
+        
+        //3. Function in Object
+        {
+            const person = {
+                firstname: 'John',
+                lastname: 'Doe',
+                age: 50,
+                eyecolor: 'bule',
+                greet: function() {
+                    console.log('Hello');
+                },
+                fullname: function (){
+                    console.log(this.firstname + ' ' + this.lastname);
+                }
+            };
+            person.greet();
+            person.fullname();
+        }
+
+        //4. Object in array
+        {
+            const persons = [
+                {
+                    firstname: 'John 1',
+                    lastname: 'Doe',
+                    age: 50,
+                    eyecolor: 'bule',
+                },
+                {
+                    firstname: 'John 2',
+                    lastname: 'Doe',
+                    age: 50,
+                    eyecolor: 'bule',
+                },
+                {
+                    firstname: 'John 3',
+                    lastname: 'Doe',
+                    age: 50,
+                    eyecolor: 'bule',
+                },
+            ]
+            console.log(persons);
+
+            for(let person of persons){
+                console.log(`Name: ${person.firstname} ${person.lastname}, age: ${person.age}`)
+            }
+        }
+
+           
+    </script>
+</body>
+</html>

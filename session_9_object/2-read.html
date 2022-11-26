@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!----------------------------------------
+        1. Object
+            - Init / Create / Delete / Assign
+            - Read
+                + 1. Read Property
+                + 2. Object destructuring
+                + 3. Loop For In
+                + 4. Read Combo (Input, Loop, Conditional, Break)
+            - Update
+                + 1. Update Propery
+                + 2. Update Combo
+        2. Primitives & Reference Types
+        3. Object & Array & Function
+            - array in object (Object advance)
+            - object in object (Nested Object)
+            - function in object / this 
+            - object in array (Data list)
+        4. Object to Array
+
+    ------------------------------------------------>
+</head>
+<body>
+    <script>
+        const person = {
+            firstname: 'John',
+            lastname: 'Doe',
+            age: 50,
+            eyecolor: 'bule',
+        }
+        // 1. Read Property
+        // console.log(`My name is: ${person.firstname} ${person.lastname}`);
+
+        // let age = 'age';
+        // console.log(`${person['age']}`);
+
+        // 2. Destructuring
+        const { firstname } = person;
+        // console.log(firstname);
+
+        // 3. Loop for in
+
+        for(let prop in person){
+            // console.log(`${prop} : ${person[prop]}`);
+        }
+
+        // 4. Read combo
+        let x = prompt('What you want to know:');
+
+        for(let prop in person){
+            if(prop == x){
+                console.log(person[prop]);
+                break;
+            }
+        }
+
+
+           
+    </script>
+</body>
+</html>
