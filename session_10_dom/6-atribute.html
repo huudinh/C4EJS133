@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!----------------------------------------
+        1. Read DOM
+            - Read id
+            - Read class
+            - Read tags
+            - querySelector / querySelectorAll
+        2. Update DOM
+            - textContent
+            - innerHTML
+        3. Event 
+            - onClick (html/js)
+            - addEventListener
+        4. Create
+            - insertAdjacentHTML
+            - createElement
+        5. Delete        
+            - remove()  
+            - removeChild
+                + firstElementChild 
+                + lastElementChild 
+        6. Style & Atribute
+            - ParentNode
+            - Dom Style
+            - Attribute
+
+
+    ------------------------------------------------>
+</head>
+<body>
+    <h1 id="msg">Singers</h1>
+    <ul id="list">
+        <li class="singer">James Bay</li>
+        <li class="singer">Nate Ruess</li>
+        <li class="singer">Ed Sheeran</li>
+        <li class="singer">Steve Garrigan <span>(HOT)</span></li>
+    </ul>
+    <p id="date" onclick="showtime(); ">Click show time now</p>
+    <button id="btnLike">Like</button>
+    <button id="btnVote">Vote</button>
+
+    <button onclick="myFunction()">Remove</button>
+    <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <input type="button" value="ok">
+    <p id="insert"><b>mesages...</b></p>
+
+    <div id="parent">
+        <p id="first-child">Some child text</p>
+        <p id="second-child">Some more child text</p>
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur, aliquam debitis praesentium, laudantium libero, dignissimos aliquid cupiditate at nostrum nobis voluptate labore dolor molestiae dolorum iure. Incidunt, nemo ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur, aliquam debitis praesentium, laudantium libero, dignissimos aliquid cupiditate at nostrum nobis voluptate labore dolor molestiae dolorum iure. Incidunt, nemo ea.</p>
+    <style>
+        .color{
+            color:blueviolet;
+            font-size:38px;
+        }
+    </style>
+    <script>
+        const firstChild = document.getElementById('first-child');
+        console.log(firstChild);
+
+        console.log(firstChild.parentNode);
+
+        firstChild.parentNode.style.backgroundColor = 'gray';
+        firstChild.parentNode.style.padding = '5px 20px';
+        firstChild.parentNode.style.color = 'white';
+
+        document.getElementById('second-child').setAttribute('class', 'color');
+        document.getElementsByTagName('input')[0].removeAttribute('type');
+        
+
+
+    </script>
+</body>
+</html>

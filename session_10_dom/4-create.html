@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!----------------------------------------
+        1. Read DOM
+            - Read id
+            - Read class
+            - Read tags
+            - querySelector / querySelectorAll
+        2. Update DOM
+            - textContent
+            - innerHTML
+        3. Event 
+            - onClick (html/js)
+            - addEventListener
+        4. Create
+            - insertAdjacentHTML
+            - createElement
+        5. Delete        
+            - remove()  
+            - removeChild
+                + firstElementChild 
+                + lastElementChild 
+        6. Style & Atribute
+            - ParentNode
+            - Dom Style
+            - Attribute
+
+
+    ------------------------------------------------>
+</head>
+<body>
+    <h1 id="msg">Singers</h1>
+    <ul id="list">
+        <li class="singer">James Bay</li>
+        <li class="singer">Nate Ruess</li>
+        <li class="singer">Ed Sheeran</li>
+        <li class="singer">Steve Garrigan <span>(HOT)</span></li>
+    </ul>
+    <p id="date" onclick="showtime(); ">Click show time now</p>
+    <button id="btnLike">Like</button>
+    <button id="btnVote">Vote</button>
+
+    <p id="insert"><b>mesages...</b></p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur, aliquam debitis praesentium, laudantium libero, dignissimos aliquid cupiditate at nostrum nobis voluptate labore dolor molestiae dolorum iure. Incidunt, nemo ea.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur, aliquam debitis praesentium, laudantium libero, dignissimos aliquid cupiditate at nostrum nobis voluptate labore dolor molestiae dolorum iure. Incidunt, nemo ea.</p>
+    
+    <script>
+        // insertAdjacentHTML
+        
+        const d = document.getElementById('insert');
+        console.log(d);
+
+        d.insertAdjacentHTML('beforeend', '<div>beforeend</div>');
+        d.insertAdjacentHTML('beforebegin', '<div>beforebegin</div>');
+        d.insertAdjacentHTML('afterbegin', '<div>afterbegin</div>');
+        d.insertAdjacentHTML('afterend', '<div>afterbegin</div>');
+
+        // createElement
+        const btn = document.createElement('button');
+        btn.innerHTML = 'Hello Button';
+        btn.classList.add('button');
+
+        d.appendChild(btn);
+
+
+    </script>
+    <style>
+        .button{
+            background:blue;
+            color:white;
+            cursor: pointer;
+            padding: 5px 15px;
+            margin:10px 0;
+        }
+    </style>
+</body>
+</html>
