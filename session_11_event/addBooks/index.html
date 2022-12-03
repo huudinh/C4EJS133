@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Books</title>
+    <link rel="stylesheet" href="assets/sass/app.min.css" />
+    <!-- Cai dat Live Sass Compiler -->
+</head>
+<body>
+    <div id="app" class="books">
+        <header class="books__header">
+            <h1 class="books__title">Reading List</h1>
+            <p>Reading list in 2022</p>
+            <form id="books__search" class="books__search">
+                <input type="text" placeholder="Search books..." />
+            </form>
+        </header>
+        <main>
+            <section class="booksList">
+                <h2 class="booksList__title">Books to Read</h2>
+                <ul>
+                    <!-- <li class="completed">
+                        <span class="booksList__name">Lập trình web căn bản</span>
+                        <span class="booksList__delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="booksList__name">Lập trình FullStack Web</span>
+                        <span class="booksList__delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="booksList__name">Lập trình Mobile App</span>
+                        <span class="booksList__delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="booksList__name">Lập trình Nodejs</span>
+                        <span class="booksList__delete">delete</span>
+                    </li> -->
+                </ul>
+            </section>
+            <form id="booksAdd" class="booksAdd">
+                <input type="text" placeholder="Add a book..." />
+                <button>Add</button>
+            </form>
+
+        </main>
+        <footer class="books__footer">@ Mindx 2022</footer>
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

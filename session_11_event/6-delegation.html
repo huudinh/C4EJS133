@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event</title>
+     <!----------------------------------------
+        1. Event
+            - eventHandle (onclick)
+            - eventListener
+            - event form
+                + submit
+                + keydown
+                + focus()
+            - Event Delegation
+                Kỹ thuật được sử dụng để lắng nghe các sự kiện con. 
+                Uỷ quyền cho phần tử cha có thể lắng nghe các sự kiện bên trong nó
+            - Event Bubbling
+                Khi một sự kiện được kích hoạt, thì cha mẹ, ông bà tổ tiên nó được kích hoạt luôn.
+        2. Add Book
+     -->
+</head>
+<body>
+    <form id="myForm">
+        <p>First name: <input type="text" name="fname" /></p>
+        <p>Last name: <input type="text" name="lname" /></p>
+        <p><input type="submit" value="Send" /></p>
+    </form>
+
+    <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('input', (event) => {
+            console.log(event.target);
+        })
+    </script>
+</body>
+</html>
